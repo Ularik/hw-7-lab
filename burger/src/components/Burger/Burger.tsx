@@ -18,7 +18,6 @@ const Burger: React.FC<Props> = ({ components }) => {
 
   let price = components.reduce((acc, item) => {
     acc += item.count !== 0 ? item.count * item.price : 0;
-    console.log(item.count, item.name)
     return acc;
   }, 0);
 
